@@ -8,11 +8,21 @@
   margin: 0;
   color: #fff8e7;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: default;
 }
 
-/****************/
-/* global class */
-/****************/
+/*
+        _____
+    ,-:` \;',`'-, 
+  .'-;_,;  ':-;_,'.
+ /;   '/    ,  _`.-\
+| '`. (`     /` ` \`|
+|:.  `\`-.   \_   / |
+|     (   `,  .`\ ;'|
+ \     | .'     `-'/
+  `.   ;/        .'
+    `'-._____. `
+*/
 
 body {
   background-color: rgb(19, 19, 19);
@@ -22,148 +32,36 @@ a {
   text-decoration: none;
   color: hotpink;
 }
+flex-container {
+  display: flex;
+}
 
-/****************/
+/*****************/
 /* custom styles */
-/****************/
+/*****************/
 
 /* top bar styling */
 .topBar {
-  /* padding: 1em; */
-  width: 33%;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-}
-.topBar nav {
   background-color: #f8e7ff;
-  text-align: center;
-  width: auto;
-  padding: 4px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vmin;
 }
-.topBar a {
+.topBar h1 {
+  font-size: 32px;
+  color: hotpink;
+}
+.topBar nav a {
   font-size: 24px;
 }
-/* .topBar nav a {
-  padding: 20px;
-} */
-
-/* banner styling */
-.hero {
-  height: 420px;
-  width: 100%;
-  margin-bottom: 20px;
-  background-image: url("../am_in_agony.jpg");
-  background-size: cover;
-  background-position: center;
+.logo {
+  width: 5vmin;
+  height: 5vmin;
 }
-.sr-only {
-  display: none;
-}
-
-/* article styling */
-article {
-  background-color: #a67b5b;
-  padding: 10px;
-}
-
 /* literally me (just taking up space) */
 .bigSection {
   height: 1000px;
-}
-
-/* my ball */
-floating-planet {
-  position: absolute;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-
-}
-.ball {
-  border-radius: 50%;
-  
-}
-.ball a {
-  font-size: px;
-  padding: 0px;
-
-	overflow: hidden;
-	/* padding: 2vmin; */
-	/* width: $d; height: $d; */
-	border-radius: 50%;
-	background: rgb(59, 34, 117);
-	font: 700 1em/ 1.25 segoe script, comic sans ms, purisa, cursive;
-
-}
-
-.shine {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 20vmin;
-  height: 40vmin;
-  border-radius: 20px;
-}
-
-
-
-
-
-
-/* 
-*  TODO
-*
-*  Learn how this works
-*  Make it orbit something instead of fall away?
-*
-*             O
-*     /~~~|#|]|=\|---\__
-*    |-=_____________  |\\ ,             O       O
-*   I|_/,-.-.-.-.-,-.\_|='(             T/\     /\=,---.
-*      ( o )( o )( o )     \            U/\     /\  `O'    cww
-*       `-'-'-'-'-`-'
-*
-*  Under construction ;)
-*
-*/
-@-webkit-keyframes particle-animation-1 {
-  100% {
-    -webkit-transform: translate3d(31vw, 87vh, 29px);
-            transform: translate3d(31vw, 87vh, 29px);
-  }
-}
-@keyframes particle-animation-1 {
-  100% {
-    -webkit-transform: translate3d(31vw, 87vh, 29px);
-            transform: translate3d(31vw, 87vh, 29px);
-  }
-}
-.ball:nth-child(1) {
-  -webkit-animation: particle-animation-1 60s infinite;
-          animation: particle-animation-1 60s infinite;
-  opacity: 1;
-  height: 207px;
-  width: 207px;
-  -webkit-animation-delay: -0.2s;
-          animation-delay: -0.2s;
-  -webkit-transform: translate3d(13vw, 35vh, 72px);
-          transform: translate3d(13vw, 35vh, 72px);
-  background: #FF4949;
-  
-}
-
-
-
-
-
-/* media query attempt */
-@media (max-width: 750px) {
-  .topBar a {
-    font-size: smaller;
-  }
-}
-
-@media (width: 420px) and (height: 420px) {
-  /* lol nice */
 }

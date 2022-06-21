@@ -1,0 +1,103 @@
+
+/* banner styling */
+.hero {
+  height: 420px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-image: url("../images/am_in_agony.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.sr-only {
+  display: none;
+}
+
+/* article styling */
+article {
+  background-color: #a67b5b;
+  padding: 10px;
+}
+
+
+
+/* 
+#541690 planet ring
+#FF4949 planet surface
+#FF8D29 planet highlight
+#FFCD38 planet highhighlight
+*/
+
+
+
+/* my ball */
+floating-planet {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.ball {
+  border-radius: 50%;
+  
+}
+.ball a {
+  font-size: px;
+  padding: 0px;
+
+	overflow: hidden;
+	/* padding: 2vmin; */
+	/* width: $d; height: $d; */
+	border-radius: 50%;
+	background: rgb(59, 34, 117);
+	font: 700 1em/ 1.25 segoe script, comic sans ms, purisa, cursive;
+
+}
+
+.shine {
+  position: absolute;
+  width: 130px;
+  height: 150px;
+  border-radius: 48%;
+  box-shadow: 18px 18px 2px -12px #FF8D29;
+  bottom: 25px;
+  right: 25px;
+}
+
+
+
+/* 
+*  TODO
+*
+*  Learn how this works
+*  Make it orbit something instead of fall away?
+*
+*             O
+*     /~~~|#|]|=\|---\__
+*    |-=_____________  |\\ ,             O       O
+*   I|_/,-.-.-.-.-,-.\_|='(             T/\     /\=,---.
+*      ( o )( o )( o )     \            U/\     /\  `O'    cww
+*       `-'-'-'-'-`-'
+*
+*  Under construction :)
+*
+*/
+
+.ball {
+  position: fixed;
+  opacity: 1;
+  height: 207px;
+  width: 207px;
+  background: #FF4949;
+  right: 0px;
+  bottom: 0px;
+}
+
+
+/* media query attempt */
+@media (max-width: 750px) {
+  .topBar a {
+    font-size: 100%;
+  }
+
+}
